@@ -1,0 +1,80 @@
+ @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
+body {
+  font-family: monospace;
+
+  font-size: 1.3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.container {
+  height: 50vh;
+
+
+}
+
+.side-nav,
+.nav-menu {
+  height: 100%;
+
+  position: absolute;
+  padding-top: 40px;
+  
+}
+.slide {
+  top: 50px;
+  left: 0;
+}
+.side-nav .nav-menu {
+  list-style: none;
+  padding: 10px 0px;
+  width: 250px;
+  background-color: #000428;
+  background:linear-gradient(to bottom, #000428 ,#004e92);
+}
+.side-nav .nav-item {
+  position: relative;
+  padding: 10px 20px;
+}
+.nav-item.active {
+  background-color: #fff;
+  box-shadow: 0px -3px rgba(0, 0, 0, 0.2), 0px 3px rgba(0, 0, 0, 0.2);
+}
+.nav-item.active a {
+  color: black;
+  font-weight: 2000;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-text {
+  display: flex;
+justify-content: space-between;
+ 
+}
+.side-nav .nav-item.active::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+.side-nav .nav-item.active::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -20px 0 0 #fff;
+}

@@ -1,0 +1,97 @@
+
+.blue {
+  background-color: #f0f6f9;
+  padding: 20px;
+}
+
+.hospital-banner {
+  position: relative;
+}
+
+.hospital-banner-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hospital-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hospital-banner-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hospital-banner-subtitle {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.choose {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  
+}
+
+.upload {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+.upload:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.uploaded-documents {
+  margin-top: 20px;
+}
+
+.uploaded-documents h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.uploaded-documents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.uploaded-documents li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.doc-name {
+  font-weight: bold;
+}
+
+.doc-time {
+  color: #555;
+  font-size: 0.9rem;
+}
+
